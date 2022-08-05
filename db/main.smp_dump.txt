@@ -1,0 +1,19 @@
+
+State Machine - |main|state
+Name state.STOP state.TRANSMITION state.ADC state.HOLD state.RECORDING state.RESET state.START state.00000000 
+state.00000000 0 0 0 0 0 0 0 0 
+state.START 0 0 0 0 0 0 1 1 
+state.RESET 0 0 0 0 0 1 0 1 
+state.RECORDING 0 0 0 0 1 0 0 1 
+state.HOLD 0 0 0 1 0 0 0 1 
+state.ADC 0 0 1 0 0 0 0 1 
+state.TRANSMITION 0 1 0 0 0 0 0 1 
+state.STOP 1 0 0 0 0 0 0 1 
+
+State Machine - |main|ADC128S022_DRIVER:comb_517|state
+Name state.REVERSE_CLK state.START_GENERATE state.START state.00000000 state.STOP 
+state.00000000 0 0 0 0 0 
+state.START 0 0 1 1 0 
+state.START_GENERATE 0 1 0 1 0 
+state.REVERSE_CLK 1 0 0 1 0 
+state.STOP 0 0 0 1 1 

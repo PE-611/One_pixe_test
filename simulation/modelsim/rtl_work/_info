@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Job/project_quartus/One_pixe_test/simulation/modelsim
+vmain
+!s110 1659720756
+!i10b 1
+!s100 Z>L:CECUaO>[o`WdmW`iS3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IlWaElOGciT<Pf3:@WbCCb3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1659720748
+8D:/Job/project_quartus/One_pixe_test/main.v
+FD:/Job/project_quartus/One_pixe_test/main.v
+!i122 5
+L0 10 215
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1659720756.000000
+!s107 D:/Job/project_quartus/One_pixe_test/main.v|
+!s90 -reportprogress|300|-work|work|D:/Job/project_quartus/One_pixe_test/main.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vmain_vlg_tst
+!s110 1659720681
+!i10b 1
+!s100 IH08NR6Q^J`OM8Nd4`gYN0
+R1
+IYUXh25z`iiFD5FQ2]FS<C0
+R2
+R0
+w1658925279
+8D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
+FD:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
+!i122 2
+L0 29 48
+R3
+r1
+!s85 0
+31
+!s108 1659720681.000000
+!s107 D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt|
+!s90 -reportprogress|300|-work|work|D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt|
+!i113 1
+R4
+R5
