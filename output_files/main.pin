@@ -79,11 +79,11 @@ RESERVED_INPUT               : A7        :        :                   :         
 GND+                         : A8        :        :                   :         : 8         :                
 GND+                         : A9        :        :                   :         : 7         :                
 RESERVED_INPUT               : A10       :        :                   :         : 7         :                
-Reset                        : A11       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : A11       :        :                   :         : 7         :                
 RESERVED_INPUT               : A12       :        :                   :         : 7         :                
 RESERVED_INPUT               : A13       :        :                   :         : 7         :                
 RESERVED_INPUT               : A14       :        :                   :         : 7         :                
-Hold                         : A15       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : A15       :        :                   :         : 7         :                
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
 RESERVED_INPUT               : B1        :        :                   :         : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
@@ -95,7 +95,7 @@ RESERVED_INPUT               : B7        :        :                   :         
 GND+                         : B8        :        :                   :         : 8         :                
 GND+                         : B9        :        :                   :         : 7         :                
 RESERVED_INPUT               : B10       :        :                   :         : 7         :                
-T_frame_switch               : B11       : input  : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : B11       :        :                   :         : 7         :                
 RESERVED_INPUT               : B12       :        :                   :         : 7         :                
 RESERVED_INPUT               : B13       :        :                   :         : 7         :                
 RESERVED_INPUT               : B14       :        :                   :         : 7         :                
@@ -111,7 +111,7 @@ VCCIO8                       : C7        : power  :                   : 2.5V    
 RESERVED_INPUT               : C8        :        :                   :         : 8         :                
 RESERVED_INPUT               : C9        :        :                   :         : 7         :                
 VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
-D_out                        : C11       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT               : C11       :        :                   :         : 7         :                
 GND                          : C12       : gnd    :                   :         :           :                
 VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
 RESERVED_INPUT               : C14       :        :                   :         : 7         :                
@@ -147,8 +147,8 @@ RESERVED_INPUT               : E11       :        :                   :         
 GNDA2                        : E12       : gnd    :                   :         :           :                
 GND                          : E13       : gnd    :                   :         :           :                
 VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
-start_button                 : E15       : input  : 2.5 V             :         : 6         : N              
-ADC_SDAT                     : E16       : input  : 2.5 V             :         : 6         : N              
+ADC_SDAT                     : E15       : input  : 2.5 V             :         : 6         : N              
+start_button                 : E16       : input  : 2.5 V             :         : 6         : N              
 RESERVED_INPUT               : F1        :        :                   :         : 1         :                
 RESERVED_INPUT               : F2        :        :                   :         : 1         :                
 RESERVED_INPUT               : F3        :        :                   :         : 1         :                
@@ -209,9 +209,9 @@ GND                          : J9        : gnd    :                   :         
 GND                          : J10       : gnd    :                   :         :           :                
 GND                          : J11       : gnd    :                   :         :           :                
 VCCINT                       : J12       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT               : J13       :        :                   :         : 5         :                
+ADC_SCLK                     : J13       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT               : J14       :        :                   :         : 5         :                
-RESERVED_INPUT               : J15       :        :                   :         : 5         :                
+D_out                        : J15       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT               : J16       :        :                   :         : 5         :                
 RESERVED_INPUT               : K1        :        :                   :         : 2         :                
 RESERVED_INPUT               : K2        :        :                   :         : 2         :                
@@ -227,8 +227,8 @@ VCCINT                       : K11       : power  :                   : 1.2V    
 GND                          : K12       : gnd    :                   :         :           :                
 GND                          : K13       : gnd    :                   :         :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
-RESERVED_INPUT               : K15       :        :                   :         : 5         :                
-ADC_SADDR                    : K16       : output : 2.5 V             :         : 5         : N              
+ADC_start_convert            : K15       : output : 2.5 V             :         : 5         : N              
+Tx_out                       : K16       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT               : L1        :        :                   :         : 2         :                
 RESERVED_INPUT               : L2        :        :                   :         : 2         :                
 RESERVED_INPUT               : L3        :        :                   :         : 2         :                
@@ -236,15 +236,15 @@ RESERVED_INPUT               : L4        :        :                   :         
 VCCA1                        : L5        : power  :                   : 2.5V    :           :                
 VCCINT                       : L6        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT               : L7        :        :                   :         : 3         :                
-ADC_CS_N                     : L8        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : L8        :        :                   :         : 3         :                
 GND                          : L9        : gnd    :                   :         :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
 VCCA4                        : L12       : power  :                   : 2.5V    :           :                
 RESERVED_INPUT               : L13       :        :                   :         : 5         :                
-RESERVED_INPUT               : L14       :        :                   :         : 5         :                
-RESERVED_INPUT               : L15       :        :                   :         : 5         :                
-RESERVED_INPUT               : L16       :        :                   :         : 5         :                
+T_frame_switch               : L14       : input  : 2.5 V             :         : 5         : N              
+Hold_IV                      : L15       : output : 2.5 V             :         : 5         : N              
+Reset_IV                     : L16       : output : 2.5 V             :         : 5         : N              
 GND+                         : M1        :        :                   :         : 2         :                
 reset                        : M2        : input  : 2.5 V             :         : 2         : N              
 VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
@@ -275,8 +275,8 @@ RESERVED_INPUT               : N11       :        :                   :         
 RESERVED_INPUT               : N12       :        :                   :         : 4         :                
 VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT               : N14       :        :                   :         : 5         :                
-RESERVED_INPUT               : N15       :        :                   :         : 5         :                
-RESERVED_INPUT               : N16       :        :                   :         : 5         :                
+ADC_CS_N                     : N15       : output : 2.5 V             :         : 5         : N              
+ADC_SADDR                    : N16       : output : 2.5 V             :         : 5         : N              
 RESERVED_INPUT               : P1        :        :                   :         : 2         :                
 RESERVED_INPUT               : P2        :        :                   :         : 2         :                
 RESERVED_INPUT               : P3        :        :                   :         : 3         :                
@@ -284,7 +284,7 @@ VCCIO3                       : P4        : power  :                   : 2.5V    
 GND                          : P5        : gnd    :                   :         :           :                
 RESERVED_INPUT               : P6        :        :                   :         : 3         :                
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
-ADC_SCLK                     : P8        : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT               : P8        :        :                   :         : 3         :                
 RESERVED_INPUT               : P9        :        :                   :         : 4         :                
 VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
 RESERVED_INPUT               : P11       :        :                   :         : 4         :                
@@ -321,7 +321,7 @@ GND+                         : T9        :        :                   :         
 RESERVED_INPUT               : T10       :        :                   :         : 4         :                
 RESERVED_INPUT               : T11       :        :                   :         : 4         :                
 RESERVED_INPUT               : T12       :        :                   :         : 4         :                
-ADC_out                      : T13       : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT               : T13       :        :                   :         : 4         :                
 RESERVED_INPUT               : T14       :        :                   :         : 4         :                
 RESERVED_INPUT               : T15       :        :                   :         : 4         :                
 VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                

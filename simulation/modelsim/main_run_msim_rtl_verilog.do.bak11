@@ -6,6 +6,8 @@ vlib rtl_work
 vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+D:/Job/project_quartus/One_pixe_test {D:/Job/project_quartus/One_pixe_test/main.v}
+vlog -vlog01compat -work work +incdir+D:/Job/project_quartus/One_pixe_test {D:/Job/project_quartus/One_pixe_test/adc128s022_driver.v}
+vlog -vlog01compat -work work +incdir+D:/Job/project_quartus/One_pixe_test {D:/Job/project_quartus/One_pixe_test/uart_tx.v}
 
 vlog -vlog01compat -work work +incdir+D:/Job/project_quartus/One_pixe_test/simulation/modelsim {D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt}
 

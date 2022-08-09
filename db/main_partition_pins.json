@@ -4,11 +4,11 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Hold",
+					"name" : "Hold_IV",
 					"strict" : false
 				},
 				{
-					"name" : "Reset",
+					"name" : "Reset_IV",
 					"strict" : false
 				},
 				{
@@ -16,7 +16,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "ADC_out",
+					"name" : "ADC_start_convert",
 					"strict" : false
 				},
 				{
@@ -25,6 +25,10 @@
 				},
 				{
 					"name" : "ADC_CS_N",
+					"strict" : false
+				},
+				{
+					"name" : "Tx_out",
 					"strict" : false
 				},
 				{
@@ -37,6 +41,10 @@
 				},
 				{
 					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "ADC_SDAT",
 					"strict" : false
 				},
 				{

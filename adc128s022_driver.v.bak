@@ -67,7 +67,7 @@ always @*
 			IDLE:
 						
 				
-				if (start_convert == 1'b0) begin
+				if (start_convert == 1'b1) begin
 					next_state <= START;
 				end
 				

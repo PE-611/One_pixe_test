@@ -1,10 +1,6 @@
 |main
-clk_in => clk_in.IN1
-start_button => process_flg.OUTPUTSELECT
-start_button => D_out.OUTPUTSELECT
-start_button => Reset.OUTPUTSELECT
-start_button => next_state.START.DATAB
-start_button => Selector0.IN2
+clk_in => clk_in.IN2
+start_button => always1.IN1
 T_frame_switch => Hz[7].DATAIN
 T_frame_switch => Hz[12].DATAIN
 T_frame_switch => Hz[13].DATAIN
@@ -19,18 +15,19 @@ T_frame_switch => Hz[4].DATAIN
 T_frame_switch => Hz[6].DATAIN
 T_frame_switch => Hz[8].DATAIN
 T_frame_switch => Hz[9].DATAIN
-ADC_SDAT => ~NO_FANOUT~
-reset => reset.IN1
-Hold <= Hold~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Reset <= Reset~reg0.DB_MAX_OUTPUT_PORT_TYPE
-D_out <= D_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ADC_out <= ADC_out.DB_MAX_OUTPUT_PORT_TYPE
-ADC_SCLK <= ADC128S022_DRIVER:comb_517.ADC_SCLK
-ADC_CS_N <= ADC128S022_DRIVER:comb_517.ADC_CS_N
-ADC_SADDR <= ADC128S022_DRIVER:comb_517.ADC_SADDR
+ADC_SDAT => ADC_SDAT.IN1
+reset => reset.IN2
+Hold_IV << Hold_IV~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Reset_IV << Reset_IV~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_out << D_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ADC_start_convert << ADC_start_convert.DB_MAX_OUTPUT_PORT_TYPE
+ADC_SCLK << ADC128S022_DRIVER:ADC1.ADC_SCLK
+ADC_CS_N << ADC128S022_DRIVER:ADC1.ADC_CS_N
+ADC_SADDR << ADC128S022_DRIVER:ADC1.ADC_SADDR
+Tx_out << UART_Tx:TX1.Tx_out
 
 
-|main|ADC128S022_DRIVER:comb_517
+|main|ADC128S022_DRIVER:ADC1
 clk_in => ADC_SCLK~reg0.CLK
 clk_in => cnt[0].CLK
 clk_in => cnt[1].CLK
@@ -44,8 +41,8 @@ clk_in => ADC_SADDR~reg0.CLK
 clk_in => ADC_CS_N~reg0.CLK
 clk_in => process_flg.CLK
 clk_in => state~1.DATAIN
-start_convert => Selector1.IN3
-start_convert => Selector0.IN2
+start_convert => Selector0.IN3
+start_convert => Selector1.IN1
 reset => state~3.DATAIN
 ADC_SDAT => data_out[0]~reg0.DATAIN
 ADC_SCLK <= ADC_SCLK~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -67,5 +64,57 @@ data_out[12] <= data_out[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data_out[13] <= data_out[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data_out[14] <= data_out[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data_out[15] <= data_out[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|main|UART_Tx:TX1
+clk_Tx => Tx_out~reg0.CLK
+clk_Tx => bit_cnt[0].CLK
+clk_Tx => bit_cnt[1].CLK
+clk_Tx => bit_cnt[2].CLK
+clk_Tx => bit_cnt[3].CLK
+clk_Tx => bit_cnt[4].CLK
+clk_Tx => bit_cnt[5].CLK
+clk_Tx => bit_cnt[6].CLK
+clk_Tx => bit_cnt[7].CLK
+clk_Tx => cnt[0].CLK
+clk_Tx => cnt[1].CLK
+clk_Tx => cnt[2].CLK
+clk_Tx => cnt[3].CLK
+clk_Tx => cnt[4].CLK
+clk_Tx => cnt[5].CLK
+clk_Tx => cnt[6].CLK
+clk_Tx => cnt[7].CLK
+clk_Tx => cnt[8].CLK
+clk_Tx => cnt[9].CLK
+clk_Tx => cnt[10].CLK
+clk_Tx => cnt[11].CLK
+clk_Tx => cnt[12].CLK
+clk_Tx => cnt[13].CLK
+clk_Tx => cnt[14].CLK
+clk_Tx => cnt[15].CLK
+clk_Tx => cnt[16].CLK
+clk_Tx => cnt[17].CLK
+clk_Tx => cnt[18].CLK
+clk_Tx => cnt[19].CLK
+clk_Tx => cnt[20].CLK
+clk_Tx => cnt[21].CLK
+clk_Tx => cnt[22].CLK
+clk_Tx => cnt[23].CLK
+clk_Tx => cnt[24].CLK
+clk_Tx => transmit_flg~reg0.CLK
+clk_Tx => state~1.DATAIN
+TX_LAUNCH => transmit_flg.OUTPUTSELECT
+TX_LAUNCH => always0.IN1
+reset => state~3.DATAIN
+data_in[0] => Mux0.IN7
+data_in[1] => Mux0.IN6
+data_in[2] => Mux0.IN5
+data_in[3] => Mux0.IN4
+data_in[4] => Mux0.IN3
+data_in[5] => Mux0.IN2
+data_in[6] => Mux0.IN1
+data_in[7] => Mux0.IN0
+Tx_out <= Tx_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+transmit_flg <= transmit_flg~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

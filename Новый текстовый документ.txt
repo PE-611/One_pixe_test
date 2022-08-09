@@ -1,0 +1,19 @@
+initial begin
+clk_in <= 1'b0;    
+start_button <= 1'b0; 
+reset <= 1'b1;
+T_frame_switch <= 1'b0;
+#10000 start_button <= 1'b1;                                              
+#50000 start_button <= 1'b0;
+#50000 start_button <= 1'b0;
+
+               
+$display("Running testbench");                       
+end     
+                                               
+always 
+#10 clk_in <= !clk_in;
+
+always @(posedge clk_in) begin
+end
+endmodule

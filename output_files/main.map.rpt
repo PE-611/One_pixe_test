@@ -1,5 +1,5 @@
 Analysis & Synthesis report for main
-Fri Aug 05 21:21:08 2022
+Tue Aug 09 22:55:35 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -14,18 +14,20 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |main|state
-  9. State Machine - |main|ADC128S022_DRIVER:comb_517|state
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Inverted Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Parameter Settings for User Entity Instance: Top-level Entity: |main
- 15. Parameter Settings for User Entity Instance: ADC128S022_DRIVER:comb_517
- 16. Port Connectivity Checks: "ADC128S022_DRIVER:comb_517"
- 17. Post-Synthesis Netlist Statistics for Top Partition
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
- 20. Analysis & Synthesis Suppressed Messages
+  9. State Machine - |main|UART_Tx:TX1|state
+ 10. State Machine - |main|ADC128S022_DRIVER:ADC1|state
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Inverted Register Statistics
+ 14. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 15. Parameter Settings for User Entity Instance: Top-level Entity: |main
+ 16. Parameter Settings for User Entity Instance: ADC128S022_DRIVER:ADC1
+ 17. Parameter Settings for User Entity Instance: UART_Tx:TX1
+ 18. Port Connectivity Checks: "ADC128S022_DRIVER:ADC1"
+ 19. Post-Synthesis Netlist Statistics for Top Partition
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
+ 22. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -52,16 +54,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Aug 05 21:21:08 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Aug 09 22:55:35 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; main                                        ;
 ; Top-level Entity Name              ; main                                        ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 113                                         ;
-;     Total combinational functions  ; 110                                         ;
-;     Dedicated logic registers      ; 71                                          ;
-; Total registers                    ; 71                                          ;
-; Total pins                         ; 12                                          ;
+; Total logic elements               ; 181                                         ;
+;     Total combinational functions  ; 170                                         ;
+;     Dedicated logic registers      ; 121                                         ;
+; Total registers                    ; 121                                         ;
+; Total pins                         ; 13                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -179,6 +181,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
 ; main.v                           ; yes             ; User Verilog HDL File        ; D:/Job/project_quartus/One_pixe_test/main.v              ;         ;
 ; adc128s022_driver.v              ; yes             ; Auto-Found Verilog HDL File  ; D:/Job/project_quartus/One_pixe_test/adc128s022_driver.v ;         ;
+; uart_tx.v                        ; yes             ; Auto-Found Verilog HDL File  ; D:/Job/project_quartus/One_pixe_test/uart_tx.v           ;         ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------+---------+
 
 
@@ -187,64 +190,80 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------+
 ; Resource                                    ; Usage        ;
 +---------------------------------------------+--------------+
-; Estimated Total logic elements              ; 113          ;
+; Estimated Total logic elements              ; 181          ;
 ;                                             ;              ;
-; Total combinational functions               ; 110          ;
+; Total combinational functions               ; 170          ;
 ; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 38           ;
-;     -- 3 input functions                    ; 19           ;
-;     -- <=2 input functions                  ; 53           ;
+;     -- 4 input functions                    ; 57           ;
+;     -- 3 input functions                    ; 25           ;
+;     -- <=2 input functions                  ; 88           ;
 ;                                             ;              ;
 ; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 65           ;
-;     -- arithmetic mode                      ; 45           ;
+;     -- normal mode                          ; 94           ;
+;     -- arithmetic mode                      ; 76           ;
 ;                                             ;              ;
-; Total registers                             ; 71           ;
-;     -- Dedicated logic registers            ; 71           ;
+; Total registers                             ; 121          ;
+;     -- Dedicated logic registers            ; 121          ;
 ;     -- I/O registers                        ; 0            ;
 ;                                             ;              ;
-; I/O pins                                    ; 12           ;
+; I/O pins                                    ; 13           ;
 ;                                             ;              ;
 ; Embedded Multiplier 9-bit elements          ; 0            ;
 ;                                             ;              ;
 ; Maximum fan-out node                        ; clk_in~input ;
-; Maximum fan-out                             ; 63           ;
-; Total fan-out                               ; 535          ;
-; Average fan-out                             ; 2.61         ;
+; Maximum fan-out                             ; 105          ;
+; Total fan-out                               ; 854          ;
+; Average fan-out                             ; 2.69         ;
 +---------------------------------------------+--------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                              ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+-------------------+--------------+
-; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name              ; Entity Name       ; Library Name ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+-------------------+--------------+
-; |main                           ; 110 (76)            ; 71 (47)                   ; 0           ; 0            ; 0       ; 0         ; 12   ; 0            ; |main                            ; main              ; work         ;
-;    |ADC128S022_DRIVER:comb_517| ; 34 (34)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ADC128S022_DRIVER:comb_517 ; ADC128S022_DRIVER ; work         ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------+-------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                      ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+-------------------+--------------+
+; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Entity Name       ; Library Name ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+-------------------+--------------+
+; |main                       ; 170 (73)            ; 121 (49)                  ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |main                        ; main              ; work         ;
+;    |ADC128S022_DRIVER:ADC1| ; 34 (34)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|ADC128S022_DRIVER:ADC1 ; ADC128S022_DRIVER ; work         ;
+;    |UART_Tx:TX1|            ; 63 (63)             ; 40 (40)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |main|UART_Tx:TX1            ; UART_Tx           ; work         ;
++-----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |main|state                                                                                                                ;
-+-------------------+------------+-------------------+-----------+------------+-----------------+-------------+-------------+----------------+
-; Name              ; state.STOP ; state.TRANSMITION ; state.ADC ; state.HOLD ; state.RECORDING ; state.RESET ; state.START ; state.00000000 ;
-+-------------------+------------+-------------------+-----------+------------+-----------------+-------------+-------------+----------------+
-; state.00000000    ; 0          ; 0                 ; 0         ; 0          ; 0               ; 0           ; 0           ; 0              ;
-; state.START       ; 0          ; 0                 ; 0         ; 0          ; 0               ; 0           ; 1           ; 1              ;
-; state.RESET       ; 0          ; 0                 ; 0         ; 0          ; 0               ; 1           ; 0           ; 1              ;
-; state.RECORDING   ; 0          ; 0                 ; 0         ; 0          ; 1               ; 0           ; 0           ; 1              ;
-; state.HOLD        ; 0          ; 0                 ; 0         ; 1          ; 0               ; 0           ; 0           ; 1              ;
-; state.ADC         ; 0          ; 0                 ; 1         ; 0          ; 0               ; 0           ; 0           ; 1              ;
-; state.TRANSMITION ; 0          ; 1                 ; 0         ; 0          ; 0               ; 0           ; 0           ; 1              ;
-; state.STOP        ; 1          ; 0                 ; 0         ; 0          ; 0               ; 0           ; 0           ; 1              ;
-+-------------------+------------+-------------------+-----------+------------+-----------------+-------------+-------------+----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |main|state                                                                                                                                                                  ;
++-------------------------------+-------------------+-------------------------------+-----------+---------------+-----------------+----------------+-------------+----------------+------------+
+; Name                          ; state.TRANSMITION ; state.WAIT_READY_CONVERTATION ; state.ADC ; state.HOLD_IV ; state.RECORDING ; state.RESET_IV ; state.START ; state.00000000 ; state.STOP ;
++-------------------------------+-------------------+-------------------------------+-----------+---------------+-----------------+----------------+-------------+----------------+------------+
+; state.00000000                ; 0                 ; 0                             ; 0         ; 0             ; 0               ; 0              ; 0           ; 0              ; 0          ;
+; state.START                   ; 0                 ; 0                             ; 0         ; 0             ; 0               ; 0              ; 1           ; 1              ; 0          ;
+; state.RESET_IV                ; 0                 ; 0                             ; 0         ; 0             ; 0               ; 1              ; 0           ; 1              ; 0          ;
+; state.RECORDING               ; 0                 ; 0                             ; 0         ; 0             ; 1               ; 0              ; 0           ; 1              ; 0          ;
+; state.HOLD_IV                 ; 0                 ; 0                             ; 0         ; 1             ; 0               ; 0              ; 0           ; 1              ; 0          ;
+; state.ADC                     ; 0                 ; 0                             ; 1         ; 0             ; 0               ; 0              ; 0           ; 1              ; 0          ;
+; state.WAIT_READY_CONVERTATION ; 0                 ; 1                             ; 0         ; 0             ; 0               ; 0              ; 0           ; 1              ; 0          ;
+; state.TRANSMITION             ; 1                 ; 0                             ; 0         ; 0             ; 0               ; 0              ; 0           ; 1              ; 0          ;
+; state.STOP                    ; 0                 ; 0                             ; 0         ; 0             ; 0               ; 0              ; 0           ; 1              ; 1          ;
++-------------------------------+-------------------+-------------------------------+-----------+---------------+-----------------+----------------+-------------+----------------+------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------+
+; State Machine - |main|UART_Tx:TX1|state                                                                           ;
++---------------------+-------------------+--------------------+-----------------+------------+---------------------+
+; Name                ; state.DEC_BIT_CNT ; state.SET_DATA_BIT ; state.START_BIT ; state.IDLE ; state.STOP_TRANSMIT ;
++---------------------+-------------------+--------------------+-----------------+------------+---------------------+
+; state.IDLE          ; 0                 ; 0                  ; 0               ; 0          ; 0                   ;
+; state.START_BIT     ; 0                 ; 0                  ; 1               ; 1          ; 0                   ;
+; state.SET_DATA_BIT  ; 0                 ; 1                  ; 0               ; 1          ; 0                   ;
+; state.DEC_BIT_CNT   ; 1                 ; 0                  ; 0               ; 1          ; 0                   ;
+; state.STOP_TRANSMIT ; 0                 ; 0                  ; 0               ; 1          ; 1                   ;
++---------------------+-------------------+--------------------+-----------------+------------+---------------------+
 
 
 Encoding Type:  One-Hot
 +-------------------------------------------------------------------------------------------------------------+
-; State Machine - |main|ADC128S022_DRIVER:comb_517|state                                                      ;
+; State Machine - |main|ADC128S022_DRIVER:ADC1|state                                                          ;
 +----------------------+-------------------+----------------------+-------------+----------------+------------+
 ; Name                 ; state.REVERSE_CLK ; state.START_GENERATE ; state.START ; state.00000000 ; state.STOP ;
 +----------------------+-------------------+----------------------+-------------+----------------+------------+
@@ -264,24 +283,30 @@ Encoding Type:  One-Hot
 ; Hz[0..3,5,10,11]                       ; Stuck at GND due to stuck port data_in ;
 ; Hz[14,15]                              ; Stuck at VCC due to stuck port data_in ;
 ; Hz[16,18,24,26..32]                    ; Stuck at GND due to stuck port data_in ;
-; ADC128S022_DRIVER:comb_517|ADC_SADDR   ; Stuck at GND due to stuck port data_in ;
+; ADC128S022_DRIVER:ADC1|ADC_SADDR       ; Stuck at GND due to stuck port data_in ;
 ; Hz[4,6..9,13,17,19..23,25]             ; Merged with Hz[12]                     ;
 ; state~4                                ; Lost fanout                            ;
 ; state~5                                ; Lost fanout                            ;
 ; state~6                                ; Lost fanout                            ;
-; state~7                                ; Lost fanout                            ;
 ; state~8                                ; Lost fanout                            ;
 ; state~9                                ; Lost fanout                            ;
 ; state~10                               ; Lost fanout                            ;
 ; state~11                               ; Lost fanout                            ;
-; ADC128S022_DRIVER:comb_517|state~4     ; Lost fanout                            ;
-; ADC128S022_DRIVER:comb_517|state~5     ; Lost fanout                            ;
-; ADC128S022_DRIVER:comb_517|state~7     ; Lost fanout                            ;
-; ADC128S022_DRIVER:comb_517|state~8     ; Lost fanout                            ;
-; ADC128S022_DRIVER:comb_517|state~9     ; Lost fanout                            ;
-; ADC128S022_DRIVER:comb_517|state~10    ; Lost fanout                            ;
-; ADC128S022_DRIVER:comb_517|state~11    ; Lost fanout                            ;
-; Total Number of Removed Registers = 48 ;                                        ;
+; UART_Tx:TX1|state~4                    ; Lost fanout                            ;
+; UART_Tx:TX1|state~5                    ; Lost fanout                            ;
+; UART_Tx:TX1|state~7                    ; Lost fanout                            ;
+; UART_Tx:TX1|state~8                    ; Lost fanout                            ;
+; UART_Tx:TX1|state~9                    ; Lost fanout                            ;
+; UART_Tx:TX1|state~10                   ; Lost fanout                            ;
+; UART_Tx:TX1|state~11                   ; Lost fanout                            ;
+; ADC128S022_DRIVER:ADC1|state~4         ; Lost fanout                            ;
+; ADC128S022_DRIVER:ADC1|state~5         ; Lost fanout                            ;
+; ADC128S022_DRIVER:ADC1|state~7         ; Lost fanout                            ;
+; ADC128S022_DRIVER:ADC1|state~8         ; Lost fanout                            ;
+; ADC128S022_DRIVER:ADC1|state~9         ; Lost fanout                            ;
+; ADC128S022_DRIVER:ADC1|state~10        ; Lost fanout                            ;
+; ADC128S022_DRIVER:ADC1|state~11        ; Lost fanout                            ;
+; Total Number of Removed Registers = 54 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
 
@@ -290,12 +315,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 71    ;
-; Number of registers using Synchronous Clear  ; 43    ;
+; Total registers                              ; 121   ;
+; Number of registers using Synchronous Clear  ; 76    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 21    ;
+; Number of registers using Asynchronous Clear ; 27    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 16    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -305,21 +330,26 @@ Encoding Type:  One-Hot
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; Hold~reg0                              ; 2       ;
-; Reset~reg0                             ; 2       ;
-; ADC128S022_DRIVER:comb_517|ADC_SCLK    ; 10      ;
-; ADC128S022_DRIVER:comb_517|ADC_CS_N    ; 2       ;
-; Total number of inverted registers = 4 ;         ;
+; Hold_IV~reg0                           ; 2       ;
+; Reset_IV~reg0                          ; 2       ;
+; ADC_start_convert~reg0                 ; 3       ;
+; ADC128S022_DRIVER:ADC1|ADC_SCLK        ; 18      ;
+; ADC128S022_DRIVER:ADC1|ADC_CS_N        ; 5       ;
+; UART_Tx:TX1|Tx_out                     ; 2       ;
+; launch_Tx                              ; 2       ;
+; Total number of inverted registers = 7 ;         ;
 +----------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |main|ADC128S022_DRIVER:comb_517|cnt[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |main|UART_Tx:TX1|bit_cnt[7]        ;
+; 3:1                ; 25 bits   ; 50 LEs        ; 25 LEs               ; 25 LEs                 ; Yes        ; |main|UART_Tx:TX1|cnt[5]            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |main|ADC128S022_DRIVER:ADC1|cnt[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -334,25 +364,36 @@ Encoding Type:  One-Hot
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ADC128S022_DRIVER:comb_517 ;
-+----------------+-------+------------------------------------------------+
-; Parameter Name ; Value ; Type                                           ;
-+----------------+-------+------------------------------------------------+
-; divider_clk    ; 16    ; Signed Integer                                 ;
-; quantity_clk   ; 16    ; Signed Integer                                 ;
-+----------------+-------+------------------------------------------------+
++---------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ADC128S022_DRIVER:ADC1 ;
++----------------+-------+--------------------------------------------+
+; Parameter Name ; Value ; Type                                       ;
++----------------+-------+--------------------------------------------+
+; divider_clk    ; 16    ; Signed Integer                             ;
+; quantity_clk   ; 16    ; Signed Integer                             ;
++----------------+-------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ADC128S022_DRIVER:comb_517"                                                                                                                      ;
-+----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                                                                                      ;
-+----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; data_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                          ;
-; ADC_SDAT ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: UART_Tx:TX1 ;
++----------------+----------+------------------------------+
+; Parameter Name ; Value    ; Type                         ;
++----------------+----------+------------------------------+
+; Fclk           ; 50000000 ; Signed Integer               ;
+; Fuart          ; 9600     ; Signed Integer               ;
+; divider        ; 5208     ; Signed Integer               ;
++----------------+----------+------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ADC128S022_DRIVER:ADC1"                                                                        ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; data_out[15..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -360,24 +401,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 12                          ;
-; cycloneiii_ff         ; 71                          ;
-;     CLR               ; 21                          ;
-;     SCLR              ; 43                          ;
-;     plain             ; 7                           ;
-; cycloneiii_lcell_comb ; 115                         ;
-;     arith             ; 45                          ;
-;         2 data inputs ; 42                          ;
-;         3 data inputs ; 3                           ;
-;     normal            ; 70                          ;
+; boundary_port         ; 13                          ;
+; cycloneiii_ff         ; 121                         ;
+;     CLR               ; 27                          ;
+;     ENA               ; 8                           ;
+;     ENA SCLR          ; 8                           ;
+;     SCLR              ; 68                          ;
+;     plain             ; 10                          ;
+; cycloneiii_lcell_comb ; 177                         ;
+;     arith             ; 76                          ;
+;         2 data inputs ; 72                          ;
+;         3 data inputs ; 4                           ;
+;     normal            ; 101                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 8                           ;
-;         2 data inputs ; 7                           ;
-;         3 data inputs ; 16                          ;
-;         4 data inputs ; 38                          ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 10                          ;
+;         3 data inputs ; 21                          ;
+;         4 data inputs ; 57                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.19                        ;
+; Average LUT depth     ; 2.98                        ;
 +-----------------------+-----------------------------+
 
 
@@ -396,35 +439,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Fri Aug 05 21:21:02 2022
+    Info: Processing started: Tue Aug 09 22:55:29 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off main -c main
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file main.v
     Info (12023): Found entity 1: main File: D:/Job/project_quartus/One_pixe_test/main.v Line: 10
-Critical Warning (10846): Verilog HDL Instantiation warning at main.v(248): instance has no name File: D:/Job/project_quartus/One_pixe_test/main.v Line: 248
 Info (12127): Elaborating entity "main" for the top level hierarchy
 Warning (12125): Using design file adc128s022_driver.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: ADC128S022_DRIVER File: D:/Job/project_quartus/One_pixe_test/adc128s022_driver.v Line: 10
-Info (12128): Elaborating entity "ADC128S022_DRIVER" for hierarchy "ADC128S022_DRIVER:comb_517" File: D:/Job/project_quartus/One_pixe_test/main.v Line: 248
+Info (12128): Elaborating entity "ADC128S022_DRIVER" for hierarchy "ADC128S022_DRIVER:ADC1" File: D:/Job/project_quartus/One_pixe_test/main.v Line: 294
 Warning (10230): Verilog HDL assignment warning at adc128s022_driver.v(182): truncated value with size 17 to match size of target (16) File: D:/Job/project_quartus/One_pixe_test/adc128s022_driver.v Line: 182
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12125): Using design file uart_tx.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: UART_Tx File: D:/Job/project_quartus/One_pixe_test/uart_tx.v Line: 9
+Info (12128): Elaborating entity "UART_Tx" for hierarchy "UART_Tx:TX1" File: D:/Job/project_quartus/One_pixe_test/main.v Line: 299
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "ADC_SADDR" is stuck at GND File: D:/Job/project_quartus/One_pixe_test/main.v Line: 12
+    Warning (13410): Pin "ADC_SADDR" is stuck at GND File: D:/Job/project_quartus/One_pixe_test/main.v Line: 14
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 15 registers lost all their fanouts during netlist optimizations.
+Info (17049): 21 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file D:/Job/project_quartus/One_pixe_test/output_files/main.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "ADC_SDAT" File: D:/Job/project_quartus/One_pixe_test/main.v Line: 10
-Info (21057): Implemented 125 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 194 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 7 output pins
-    Info (21061): Implemented 113 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4758 megabytes
-    Info: Processing ended: Fri Aug 05 21:21:08 2022
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 181 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4759 megabytes
+    Info: Processing ended: Tue Aug 09 22:55:35 2022
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:14
 
