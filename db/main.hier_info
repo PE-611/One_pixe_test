@@ -4,27 +4,27 @@ start_button => always1.IN1
 T_frame_switch => Hz[7].DATAIN
 T_frame_switch => Hz[12].DATAIN
 T_frame_switch => Hz[13].DATAIN
+T_frame_switch => Hz[15].DATAIN
 T_frame_switch => Hz[17].DATAIN
-T_frame_switch => Hz[19].DATAIN
 T_frame_switch => Hz[20].DATAIN
 T_frame_switch => Hz[21].DATAIN
-T_frame_switch => Hz[22].DATAIN
 T_frame_switch => Hz[23].DATAIN
 T_frame_switch => Hz[25].DATAIN
-T_frame_switch => Hz[4].DATAIN
 T_frame_switch => Hz[6].DATAIN
 T_frame_switch => Hz[8].DATAIN
 T_frame_switch => Hz[9].DATAIN
+T_frame_switch => Hz[11].DATAIN
+T_frame_switch => Hz[18].DATAIN
 ADC_SDAT => ADC_SDAT.IN1
 reset => reset.IN2
-Hold_IV << Hold_IV~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Reset_IV << Reset_IV~reg0.DB_MAX_OUTPUT_PORT_TYPE
-D_out << D_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ADC_start_convert << ADC_start_convert.DB_MAX_OUTPUT_PORT_TYPE
-ADC_SCLK << ADC128S022_DRIVER:ADC1.ADC_SCLK
-ADC_CS_N << ADC128S022_DRIVER:ADC1.ADC_CS_N
-ADC_SADDR << ADC128S022_DRIVER:ADC1.ADC_SADDR
-Tx_out << UART_Tx:TX1.Tx_out
+Hold_IV <= Hold_IV~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Reset_IV <= Reset_IV~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_out <= D_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ADC_start_convert <= ADC_start_convert.DB_MAX_OUTPUT_PORT_TYPE
+ADC_SCLK <= ADC128S022_DRIVER:ADC1.ADC_SCLK
+ADC_CS_N <= ADC128S022_DRIVER:ADC1.ADC_CS_N
+ADC_SADDR <= ADC128S022_DRIVER:ADC1.ADC_SADDR
+Tx_out <= UART_Tx:TX1.Tx_out
 
 
 |main|ADC128S022_DRIVER:ADC1

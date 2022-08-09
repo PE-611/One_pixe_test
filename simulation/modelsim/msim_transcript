@@ -12,49 +12,49 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/Job/project_quartus/One_pixe_test {D:/Job/project_quartus/One_pixe_test/main.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:25 on Aug 09,2022
+# Start time: 23:34:26 on Aug 09,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Job/project_quartus/One_pixe_test" D:/Job/project_quartus/One_pixe_test/main.v 
 # -- Compiling module main
 # 
 # Top level modules:
 # 	main
-# End time: 22:20:25 on Aug 09,2022, Elapsed time: 0:00:00
+# End time: 23:34:26 on Aug 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/Job/project_quartus/One_pixe_test {D:/Job/project_quartus/One_pixe_test/adc128s022_driver.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:25 on Aug 09,2022
+# Start time: 23:34:26 on Aug 09,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Job/project_quartus/One_pixe_test" D:/Job/project_quartus/One_pixe_test/adc128s022_driver.v 
 # -- Compiling module ADC128S022_DRIVER
 # 
 # Top level modules:
 # 	ADC128S022_DRIVER
-# End time: 22:20:25 on Aug 09,2022, Elapsed time: 0:00:00
+# End time: 23:34:27 on Aug 09,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/Job/project_quartus/One_pixe_test {D:/Job/project_quartus/One_pixe_test/uart_tx.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:25 on Aug 09,2022
+# Start time: 23:34:27 on Aug 09,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Job/project_quartus/One_pixe_test" D:/Job/project_quartus/One_pixe_test/uart_tx.v 
 # -- Compiling module UART_Tx
 # 
 # Top level modules:
 # 	UART_Tx
-# End time: 22:20:25 on Aug 09,2022, Elapsed time: 0:00:00
+# End time: 23:34:27 on Aug 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/Job/project_quartus/One_pixe_test/simulation/modelsim {D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:25 on Aug 09,2022
+# Start time: 23:34:27 on Aug 09,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/Job/project_quartus/One_pixe_test/simulation/modelsim" D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
 # -- Compiling module main_vlg_tst
 # 
 # Top level modules:
 # 	main_vlg_tst
-# End time: 22:20:25 on Aug 09,2022, Elapsed time: 0:00:00
+# End time: 23:34:27 on Aug 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  main_vlg_tst
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" main_vlg_tst 
-# Start time: 22:20:25 on Aug 09,2022
+# Start time: 23:34:27 on Aug 09,2022
 # Loading work.main_vlg_tst
 # Loading work.main
 # Loading work.ADC128S022_DRIVER
@@ -67,51 +67,6 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 # Running testbench
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:36 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:20:36 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:41 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
-# -- Compiling module ADC128S022_DRIVER
-# 
-# Top level modules:
-# 	ADC128S022_DRIVER
-# End time: 22:20:41 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:41 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
-# -- Compiling module main
-# 
-# Top level modules:
-# 	main
-# End time: 22:20:41 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:41 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
-# -- Compiling module UART_Tx
-# 
-# Top level modules:
-# 	UART_Tx
-# End time: 22:20:41 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart -f
-# Loading work.main_vlg_tst
-# Loading work.main
-# Loading work.ADC128S022_DRIVER
-# Loading work.UART_Tx
 add wave -position end  sim:/main_vlg_tst/i1/divider
 add wave -position end  sim:/main_vlg_tst/i1/t_frame_1sec
 add wave -position end  sim:/main_vlg_tst/i1/t_frame_0_1sec
@@ -122,7 +77,8 @@ add wave -position end  sim:/main_vlg_tst/i1/RECORDING
 add wave -position end  sim:/main_vlg_tst/i1/HOLD_IV
 add wave -position end  sim:/main_vlg_tst/i1/ADC
 add wave -position end  sim:/main_vlg_tst/i1/WAIT_READY_CONVERTATION
-add wave -position end  sim:/main_vlg_tst/i1/TRANSMITION
+add wave -position end  sim:/main_vlg_tst/i1/TRANSMITION_1_HALF
+add wave -position end  sim:/main_vlg_tst/i1/TRANSMITION_2_HALF
 add wave -position end  sim:/main_vlg_tst/i1/STOP
 add wave -position end  sim:/main_vlg_tst/i1/clk_in
 add wave -position end  sim:/main_vlg_tst/i1/start_button
@@ -143,10 +99,264 @@ add wave -position end  sim:/main_vlg_tst/i1/process_flg
 add wave -position end  sim:/main_vlg_tst/i1/cnt
 add wave -position end  sim:/main_vlg_tst/i1/Hz
 add wave -position end  sim:/main_vlg_tst/i1/data_out
+add wave -position end  sim:/main_vlg_tst/i1/data_1_half
+add wave -position end  sim:/main_vlg_tst/i1/data_2_half
 add wave -position end  sim:/main_vlg_tst/i1/launch_Tx
 add wave -position end  sim:/main_vlg_tst/i1/transmit_flg
+add wave -position end  sim:/main_vlg_tst/i1/data_for_transmit
+restart -f
+run
+run
+run
+run
+run
+# Running testbench
+run
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:42:42 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
+# -- Compiling module main_vlg_tst
+# 
+# Top level modules:
+# 	main_vlg_tst
+# End time: 23:42:42 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:42:44 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
+# -- Compiling module main_vlg_tst
+# 
+# Top level modules:
+# 	main_vlg_tst
+# End time: 23:42:44 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:42:48 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
+# -- Compiling module ADC128S022_DRIVER
+# 
+# Top level modules:
+# 	ADC128S022_DRIVER
+# End time: 23:42:48 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:42:48 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 23:42:48 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:42:48 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
+# -- Compiling module UART_Tx
+# 
+# Top level modules:
+# 	UART_Tx
+# End time: 23:42:48 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.main_vlg_tst
+# Loading work.main
+# Loading work.ADC128S022_DRIVER
+# Loading work.UART_Tx
+run
+# GetModuleFileName: Не найден указанный модуль.
+# 
+# 
+# Running testbench
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:47:17 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
+# -- Compiling module ADC128S022_DRIVER
+# 
+# Top level modules:
+# 	ADC128S022_DRIVER
+# End time: 23:47:17 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:47:17 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 23:47:17 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:47:17 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
+# -- Compiling module UART_Tx
+# 
+# Top level modules:
+# 	UART_Tx
+# End time: 23:47:17 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.main
+# Loading work.ADC128S022_DRIVER
+# Loading work.UART_Tx
+run
+# GetModuleFileName: Не найден указанный модуль.
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:48:22 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
+# -- Compiling module ADC128S022_DRIVER
+# 
+# Top level modules:
+# 	ADC128S022_DRIVER
+# End time: 23:48:22 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:48:22 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 23:48:22 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:48:22 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
+# -- Compiling module UART_Tx
+# 
+# Top level modules:
+# 	UART_Tx
+# End time: 23:48:22 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.main
+# Loading work.ADC128S022_DRIVER
+# Loading work.UART_Tx
+run
+# GetModuleFileName: Не найден указанный модуль.
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:52:22 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
+# -- Compiling module ADC128S022_DRIVER
+# 
+# Top level modules:
+# 	ADC128S022_DRIVER
+# End time: 23:52:22 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:52:22 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 23:52:22 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:52:22 on Aug 09,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
+# -- Compiling module UART_Tx
+# 
+# Top level modules:
+# 	UART_Tx
+# End time: 23:52:22 on Aug 09,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.main
+# Loading work.ADC128S022_DRIVER
+# Loading work.UART_Tx
+run
+# GetModuleFileName: Не найден указанный модуль.
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Running testbench
+run
+run
+run
+run
+run
+run
+run
+run
 run -continue
-# Running testbench
+run -continue
+run -continue
 run
 run
 run
@@ -163,11 +373,6 @@ run
 run
 run
 run
-# Load canceled
-restart -f
-run
-run
-# Running testbench
 run
 run
 run
@@ -184,14 +389,11 @@ run
 run
 run
 run
-add wave -position 23  sim:/main_vlg_tst/i1/TX1/transmit_flg
-restart -f
 run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
 run
-# Running testbench
+run
+run
+run
 run
 run
 run
@@ -207,635 +409,43 @@ run
 run
 vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:24:13 on Aug 09,2022
+# Start time: 23:57:33 on Aug 09,2022
 # vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
 # -- Compiling module ADC128S022_DRIVER
 # 
 # Top level modules:
 # 	ADC128S022_DRIVER
-# End time: 22:24:13 on Aug 09,2022, Elapsed time: 0:00:00
+# End time: 23:57:33 on Aug 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:24:13 on Aug 09,2022
+# Start time: 23:57:33 on Aug 09,2022
 # vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
 # -- Compiling module main
 # 
 # Top level modules:
 # 	main
-# End time: 22:24:13 on Aug 09,2022, Elapsed time: 0:00:00
+# End time: 23:57:33 on Aug 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:24:13 on Aug 09,2022
+# Start time: 23:57:33 on Aug 09,2022
 # vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
 # -- Compiling module UART_Tx
 # 
 # Top level modules:
 # 	UART_Tx
-# End time: 22:24:13 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart -f
-# Loading work.main
-# Loading work.ADC128S022_DRIVER
-# Loading work.UART_Tx
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:24:28 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:24:28 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart -f
-# Loading work.main_vlg_tst
-run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
-run
-# Running testbench
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:25:32 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:25:32 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart -f
-# Loading work.main_vlg_tst
-run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
-run
-# Running testbench
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:26:08 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:26:08 on Aug 09,2022, Elapsed time: 0:00:00
+# End time: 23:57:33 on Aug 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:26:15 on Aug 09,2022
+# Start time: 23:57:36 on Aug 09,2022
 # vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
 # -- Compiling module main_vlg_tst
 # 
 # Top level modules:
 # 	main_vlg_tst
-# End time: 22:26:15 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:26:25 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:26:25 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart -f
-# Loading work.main_vlg_tst
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:26:35 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# ** Error: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(75): (vlog-13008) Unsized literal value 99999999999999 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd99999999999999) or reduce the literal value to fit in 32 bits.
-# End time: 22:26:35 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:27:49 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(75): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:27:49 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-restart -f
-# Loading work.main_vlg_tst
-run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:28:15 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(75): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(76): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(77): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(78): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:28:15 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 4
-restart -f
-# Loading work.main_vlg_tst
-run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:29:09 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(75): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(76): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(77): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(78): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:29:09 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 4
-restart -f
-# Loading work.main_vlg_tst
-run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:30:06 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(76): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(77): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(78): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(79): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:30:06 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 4
-restart -f
-# Loading work.main_vlg_tst
-run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:30:34 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(76): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(77): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:30:34 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 2
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:30:44 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(76): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(77): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:30:45 on Aug 09,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 2
-restart -f
-# Loading work.main_vlg_tst
-run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:31:21 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# ** Warning: D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt(76): (vlog-2597) '4294967295' is being treated as 32-bit signed integer and will overflow.
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:31:21 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# Load canceled
-restart -f
-# Loading work.main_vlg_tst
-run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:32:04 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:32:04 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart -f
-# Loading work.main_vlg_tst
-run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
-run
-run
-run
-run
-# Running testbench
-run
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:32:53 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:32:54 on Aug 09,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart -f
-# Loading work.main_vlg_tst
-run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
-run
-run
-run
-run
-# Running testbench
-run
-run
-run
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:33:25 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:33:25 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart -f
-# Loading work.main_vlg_tst
-run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
-run
-run
-run
-run
-# Running testbench
-run
-run
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:34:56 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:34:56 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart -f
-# Loading work.main_vlg_tst
-run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
-run
-run
-run
-run
-# Running testbench
-run
-run
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:35:13 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
-# -- Compiling module ADC128S022_DRIVER
-# 
-# Top level modules:
-# 	ADC128S022_DRIVER
-# End time: 22:35:13 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:35:13 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
-# -- Compiling module main
-# 
-# Top level modules:
-# 	main
-# End time: 22:35:13 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:35:13 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
-# -- Compiling module UART_Tx
-# 
-# Top level modules:
-# 	UART_Tx
-# End time: 22:35:14 on Aug 09,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart -f
-# Loading work.main
-# Loading work.ADC128S022_DRIVER
-# Loading work.UART_Tx
-run
-# GetModuleFileName: Не найден указанный модуль.
-# 
-# 
-run
-run
-run
-run
-# Running testbench
-run
-run
-run
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:36:03 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
-# -- Compiling module ADC128S022_DRIVER
-# 
-# Top level modules:
-# 	ADC128S022_DRIVER
-# End time: 22:36:04 on Aug 09,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:36:04 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
-# -- Compiling module main
-# 
-# Top level modules:
-# 	main
-# End time: 22:36:04 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:36:04 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
-# -- Compiling module UART_Tx
-# 
-# Top level modules:
-# 	UART_Tx
-# End time: 22:36:04 on Aug 09,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:36:06 on Aug 09,2022
-# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
-# -- Compiling module main_vlg_tst
-# 
-# Top level modules:
-# 	main_vlg_tst
-# End time: 22:36:06 on Aug 09,2022, Elapsed time: 0:00:00
+# End time: 23:57:36 on Aug 09,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart -f
 # Loading work.main_vlg_tst
@@ -850,11 +460,354 @@ run
 run
 run
 run
+run
+run
+run
+run
+run
+run
+run
+run
+run
 # Running testbench
 run
 run
 run
 run
 run
-# End time: 22:56:09 on Aug 09,2022, Elapsed time: 0:35:44
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# WARNING: No extended dataflow license exists
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:00:45 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
+# -- Compiling module ADC128S022_DRIVER
+# 
+# Top level modules:
+# 	ADC128S022_DRIVER
+# End time: 00:00:45 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:00:45 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 00:00:45 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:00:45 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
+# -- Compiling module UART_Tx
+# 
+# Top level modules:
+# 	UART_Tx
+# End time: 00:00:45 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.main
+# Loading work.ADC128S022_DRIVER
+# Loading work.UART_Tx
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'TX1'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /main_vlg_tst/i1/TX1 File: D:/Job/project_quartus/One_pixe_test/main.v Line: 340
+# ** Warning: (vsim-3722) D:/Job/project_quartus/One_pixe_test/main.v(340): [TFMPC] - Missing connection for port 'UART_clk'.
+run
+# GetModuleFileName: Не найден указанный модуль.
+# 
+# 
+run
+run
+add wave -position 16  sim:/main_vlg_tst/i1/TX1/UART_clk
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'TX1'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /main_vlg_tst/i1/TX1 File: D:/Job/project_quartus/One_pixe_test/main.v Line: 340
+# ** Warning: (vsim-3722) D:/Job/project_quartus/One_pixe_test/main.v(340): [TFMPC] - Missing connection for port 'UART_clk'.
+run
+# GetModuleFileName: Не найден указанный модуль.
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+# Running testbench
+run
+run
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:26 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
+# -- Compiling module ADC128S022_DRIVER
+# 
+# Top level modules:
+# 	ADC128S022_DRIVER
+# End time: 00:02:26 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:26 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 00:02:26 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:02:26 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
+# -- Compiling module UART_Tx
+# 
+# Top level modules:
+# 	UART_Tx
+# End time: 00:02:26 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.main
+# Loading work.ADC128S022_DRIVER
+# Loading work.UART_Tx
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'TX1'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /main_vlg_tst/i1/TX1 File: D:/Job/project_quartus/One_pixe_test/main.v Line: 340
+# ** Warning: (vsim-3722) D:/Job/project_quartus/One_pixe_test/main.v(340): [TFMPC] - Missing connection for port 'UART_clk'.
+run
+# GetModuleFileName: Не найден указанный модуль.
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+# Running testbench
+run
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:03:30 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
+# -- Compiling module ADC128S022_DRIVER
+# 
+# Top level modules:
+# 	ADC128S022_DRIVER
+# End time: 00:03:30 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:03:30 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 00:03:30 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:03:30 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
+# -- Compiling module UART_Tx
+# 
+# Top level modules:
+# 	UART_Tx
+# End time: 00:03:30 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.main
+# Loading work.ADC128S022_DRIVER
+# Loading work.UART_Tx
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'TX1'.  Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /main_vlg_tst/i1/TX1 File: D:/Job/project_quartus/One_pixe_test/main.v Line: 340
+# ** Warning: (vsim-3722) D:/Job/project_quartus/One_pixe_test/main.v(340): [TFMPC] - Missing connection for port 'UART_clk'.
+run
+# GetModuleFileName: Не найден указанный модуль.
+# 
+# 
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:04:11 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
+# -- Compiling module ADC128S022_DRIVER
+# 
+# Top level modules:
+# 	ADC128S022_DRIVER
+# End time: 00:04:11 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:04:11 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 00:04:11 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:04:11 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
+# -- Compiling module UART_Tx
+# 
+# Top level modules:
+# 	UART_Tx
+# End time: 00:04:11 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.main
+# Loading work.ADC128S022_DRIVER
+# Loading work.UART_Tx
+# Warning in wave window restart: (vish-4014) No objects found matching '/main_vlg_tst/i1/TX1/UART_clk'. 
+run
+# GetModuleFileName: Не найден указанный модуль.
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+# Running testbench
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:05:04 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
+# -- Compiling module ADC128S022_DRIVER
+# 
+# Top level modules:
+# 	ADC128S022_DRIVER
+# End time: 00:05:04 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:05:04 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 00:05:04 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:05:04 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
+# -- Compiling module UART_Tx
+# 
+# Top level modules:
+# 	UART_Tx
+# End time: 00:05:04 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.main
+# Loading work.ADC128S022_DRIVER
+# Loading work.UART_Tx
+run
+# GetModuleFileName: Не найден указанный модуль.
+# 
+# 
+run
+run
+run
+run
+run
+run
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:05:38 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v 
+# -- Compiling module ADC128S022_DRIVER
+# 
+# Top level modules:
+# 	ADC128S022_DRIVER
+# End time: 00:05:38 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:05:38 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/main.v 
+# -- Compiling module main
+# 
+# Top level modules:
+# 	main
+# End time: 00:05:38 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:05:38 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/UART_Tx.v 
+# -- Compiling module UART_Tx
+# 
+# Top level modules:
+# 	UART_Tx
+# End time: 00:05:38 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:05:41 on Aug 10,2022
+# vlog -reportprogress 300 -work work D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt 
+# -- Compiling module main_vlg_tst
+# 
+# Top level modules:
+# 	main_vlg_tst
+# End time: 00:05:41 on Aug 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.main_vlg_tst
+# Loading work.main
+# Loading work.ADC128S022_DRIVER
+# Loading work.UART_Tx
+run
+# GetModuleFileName: Не найден указанный модуль.
+# 
+# 
+run
+run
+run
+run
+run
+run
+run
+run
+# Running testbench
+restart -f
+run
+# GetModuleFileName: Не найден указанный модуль.
+# 
+# 
+# Running testbench
+run
+run
+run
+# End time: 00:07:10 on Aug 10,2022, Elapsed time: 0:32:43
 # Errors: 0, Warnings: 0

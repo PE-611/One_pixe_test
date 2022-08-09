@@ -44,11 +44,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "ADC_SDAT",
+					"name" : "T_frame_switch",
 					"strict" : false
 				},
 				{
-					"name" : "T_frame_switch",
+					"name" : "ADC_SDAT",
 					"strict" : false
 				}
 			]

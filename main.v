@@ -21,7 +21,7 @@ module main (input clk_in, start_button, T_frame_switch, ADC_SDAT, reset,
 
 parameter divider = 2000;
 parameter t_frame_1sec = 50000000;
-parameter t_frame_0_1sec = 50000; // !!!!не забыть поставить число 50 000 00!!!!!!!!!
+parameter t_frame_0_1sec = 5000000; // !!!!не забыть поставить число 50 000 00!!!!!!!!!
 
 		  
 reg [7:0] state;	
@@ -35,8 +35,10 @@ localparam RECORDING						= 8'd3;
 localparam HOLD_IV						= 8'd4;
 localparam ADC								= 8'd5;
 localparam WAIT_READY_CONVERTATION  = 8'd6;
-localparam TRANSMITION					= 8'd7;
-localparam STOP							= 8'd8;
+localparam TRANSMITION_1_HALF			= 8'd7;
+localparam RELOAD_TX						= 8'd8;
+localparam TRANSMITION_2_HALF 		= 8'd9;
+localparam STOP							= 8'd10;
 		  
 reg process_flg;
 reg [32:0] cnt;
@@ -50,6 +52,10 @@ reg [32:0] Hz;
 //////////////////////////// ADC128S022_DRIVER MODULE REG/WIRE/PARAMETERS //////////////////////////////////////////////
 
 wire [15:0] data_out;
+wire [7:0] data_1_half;
+wire [7:0] data_2_half;
+assign data_1_half = data_out[7:0];
+assign data_2_half = data_out[15:8];
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -61,6 +67,7 @@ wire [15:0] data_out;
 
 reg launch_Tx;
 wire transmit_flg;
+reg [7:0] data_for_transmit;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -84,6 +91,8 @@ initial begin
 	cnt <= 1'b0;
 	
 	Hz <= t_frame_0_1sec;
+	
+	data_for_transmit <= 1'b0;
 
 	
 end		
@@ -161,21 +170,42 @@ always @*
 			WAIT_READY_CONVERTATION:
 			
 				if (ADC_CS_N == 1'b1) begin 
-					next_state <= TRANSMITION;
+					next_state <= TRANSMITION_1_HALF;
 				end
 				
 				else begin
 					next_state <= WAIT_READY_CONVERTATION;
 				end
 			
-			TRANSMITION:
+			TRANSMITION_1_HALF:
+			
+				if (transmit_flg == 1'b1) begin 
+					next_state <= RELOAD_TX;
+				end
+				
+				else begin
+					next_state <= TRANSMITION_1_HALF;
+				end
+			
+			RELOAD_TX:
+			
+				if (transmit_flg == 1'b0) begin 
+					next_state <= TRANSMITION_2_HALF;
+				end
+				
+				else begin
+					next_state <= RELOAD_TX;
+				end
+			
+				
+			TRANSMITION_2_HALF:
 			
 				if (transmit_flg == 1'b1) begin 
 					next_state <= STOP;
 				end
 				
 				else begin
-					next_state <= TRANSMITION;
+					next_state <= TRANSMITION_2_HALF;
 				end
 			
 			STOP:
@@ -243,11 +273,21 @@ always @(posedge clk_in) begin
 		ADC_start_convert <= 1'b1;
 	end
 	
-	if (state == TRANSMITION) begin
+	if (state == TRANSMITION_1_HALF) begin
 		launch_Tx <= 1'b0;
+		data_for_transmit <= data_1_half;
 	end
 	
-	if (state != TRANSMITION) begin
+	if (state == RELOAD_TX) begin
+		launch_Tx <= 1'b1;
+	end
+	
+	if (state == TRANSMITION_2_HALF) begin
+		launch_Tx <= 1'b0;
+		data_for_transmit <= data_2_half;
+	end
+	
+	if (state != TRANSMITION_1_HALF && state != TRANSMITION_2_HALF) begin
 		launch_Tx <= 1'b1;
 	end
 	
@@ -262,6 +302,8 @@ always @(posedge clk_in) begin
 
 		
 		cnt <= 1'b0;
+		
+		launch_Tx <= 1'b1;
 		
 		
 		
@@ -296,7 +338,7 @@ ADC128S022_DRIVER ADC1 (.clk_in(clk_in), .reset(reset), .ADC_SDAT(ADC_SDAT),
 						 
 						 
 UART_Tx TX1 (.clk_Tx(clk_in), .TX_LAUNCH(launch_Tx), .reset(reset), .transmit_flg(transmit_flg),
-			.data_in(data_out[7:0]), .Tx_out(Tx_out));
+			.data_in(data_for_transmit), .Tx_out(Tx_out));
 
 
 	

@@ -1,15 +1,17 @@
 
 State Machine - |main|state
-Name state.TRANSMITION state.WAIT_READY_CONVERTATION state.ADC state.HOLD_IV state.RECORDING state.RESET_IV state.START state.00000000 state.STOP 
-state.00000000 0 0 0 0 0 0 0 0 0 
-state.START 0 0 0 0 0 0 1 1 0 
-state.RESET_IV 0 0 0 0 0 1 0 1 0 
-state.RECORDING 0 0 0 0 1 0 0 1 0 
-state.HOLD_IV 0 0 0 1 0 0 0 1 0 
-state.ADC 0 0 1 0 0 0 0 1 0 
-state.WAIT_READY_CONVERTATION 0 1 0 0 0 0 0 1 0 
-state.TRANSMITION 1 0 0 0 0 0 0 1 0 
-state.STOP 0 0 0 0 0 0 0 1 1 
+Name state.STOP state.TRANSMITION_2_HALF state.RELOAD_TX state.TRANSMITION_1_HALF state.WAIT_READY_CONVERTATION state.ADC state.HOLD_IV state.RECORDING state.RESET_IV state.START state.00000000 
+state.00000000 0 0 0 0 0 0 0 0 0 0 0 
+state.START 0 0 0 0 0 0 0 0 0 1 1 
+state.RESET_IV 0 0 0 0 0 0 0 0 1 0 1 
+state.RECORDING 0 0 0 0 0 0 0 1 0 0 1 
+state.HOLD_IV 0 0 0 0 0 0 1 0 0 0 1 
+state.ADC 0 0 0 0 0 1 0 0 0 0 1 
+state.WAIT_READY_CONVERTATION 0 0 0 0 1 0 0 0 0 0 1 
+state.TRANSMITION_1_HALF 0 0 0 1 0 0 0 0 0 0 1 
+state.RELOAD_TX 0 0 1 0 0 0 0 0 0 0 1 
+state.TRANSMITION_2_HALF 0 1 0 0 0 0 0 0 0 0 1 
+state.STOP 1 0 0 0 0 0 0 0 0 0 1 
 
 State Machine - |main|UART_Tx:TX1|state
 Name state.DEC_BIT_CNT state.SET_DATA_BIT state.START_BIT state.IDLE state.STOP_TRANSMIT 

@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dD:/Job/project_quartus/One_pixe_test/simulation/modelsim
 vADC128S022_DRIVER
-Z1 !s110 1660073764
+Z1 !s110 1660079138
 !i10b 1
 !s100 @?cgcG6VN6a=3LL6:W?lL3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -20,65 +20,65 @@ R0
 w1660071386
 8D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
 FD:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
-!i122 30
+!i122 37
 L0 10 194
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1660073763.000000
+Z5 !s108 1660079138.000000
 !s107 D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v|
 !s90 -reportprogress|300|-work|work|D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z6 o-work work
+Z7 tCvgOpt 0
 n@a@d@c128@s022_@d@r@i@v@e@r
 vmain
 R1
 !i10b 1
-!s100 kjIPdi`L9[0CkCi06J?9R1
+!s100 ^h5Vo]:`e5FMM^7d7U]=c3
 R2
-I7E00E05jokbn8mQgQI5:b1
+Ibh7l20Ea;e`9l]VGjSbGi1
 R3
 R0
-w1660073689
+w1660079086
 8D:/Job/project_quartus/One_pixe_test/main.v
 FD:/Job/project_quartus/One_pixe_test/main.v
-!i122 31
-L0 10 295
+!i122 38
+L0 10 337
 R4
 r1
 !s85 0
 31
-Z7 !s108 1660073764.000000
+R5
 !s107 D:/Job/project_quartus/One_pixe_test/main.v|
 !s90 -reportprogress|300|-work|work|D:/Job/project_quartus/One_pixe_test/main.v|
 !i113 1
-R5
 R6
+R7
 vmain_vlg_tst
-!s110 1660073766
+!s110 1660079141
 !i10b 1
-!s100 TSH_0L4]JI4UU>cRm6L`j3
+!s100 =`Z@9Z[=G>SVFHC=058751
 R2
-ISG8PegJ^75>Zc=Y[Tdo7B0
+ID323=40eQYSzX`V0ERndh0
 R3
 R0
-w1660073601
+w1660079135
 8D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
 FD:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-!i122 33
+!i122 40
 L0 29 66
 R4
 r1
 !s85 0
 31
-!s108 1660073766.000000
+!s108 1660079141.000000
 !s107 D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt|
 !s90 -reportprogress|300|-work|work|D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt|
 !i113 1
-R5
 R6
+R7
 vUART_Tx
 R1
 !i10b 1
@@ -87,19 +87,19 @@ R2
 IDFX7lH_2_YB_6mBPOS^1i3
 R3
 R0
-w1660072731
+w1660079044
 8D:/Job/project_quartus/One_pixe_test/UART_Tx.v
 FD:/Job/project_quartus/One_pixe_test/UART_Tx.v
-!i122 32
+!i122 39
 L0 9 161
 R4
 r1
 !s85 0
 31
-R7
+R5
 !s107 D:/Job/project_quartus/One_pixe_test/UART_Tx.v|
 !s90 -reportprogress|300|-work|work|D:/Job/project_quartus/One_pixe_test/UART_Tx.v|
 !i113 1
-R5
 R6
+R7
 n@u@a@r@t_@tx

@@ -1,3 +1,3 @@
-Warning (10268): Verilog HDL information at main.v(199): always construct contains both blocking and non-blocking assignments File: D:/Job/project_quartus/One_pixe_test/main.v Line: 199
+Warning (10268): Verilog HDL information at main.v(229): always construct contains both blocking and non-blocking assignments File: D:/Job/project_quartus/One_pixe_test/main.v Line: 229
 Info (10281): Verilog HDL Declaration information at main.v(12): object "Reset_IV" differs only in case from object "RESET_IV" in the same scope File: D:/Job/project_quartus/One_pixe_test/main.v Line: 12
 Info (10281): Verilog HDL Declaration information at main.v(12): object "Hold_IV" differs only in case from object "HOLD_IV" in the same scope File: D:/Job/project_quartus/One_pixe_test/main.v Line: 12
