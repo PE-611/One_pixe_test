@@ -16,10 +16,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "ADC_start_convert",
-					"strict" : false
-				},
-				{
 					"name" : "ADC_SCLK",
 					"strict" : false
 				},
@@ -32,7 +28,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk_in",
+					"name" : "led",
+					"strict" : false
+				},
+				{
+					"name" : "led_sw",
 					"strict" : false
 				},
 				{
@@ -40,11 +40,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "reset",
+					"name" : "T_frame_switch",
 					"strict" : false
 				},
 				{
-					"name" : "T_frame_switch",
+					"name" : "clk_in",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
 					"strict" : false
 				},
 				{

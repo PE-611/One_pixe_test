@@ -3,15 +3,15 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk_in'
-Slack : -3.785
-TNS   : -260.976
+Slack : -3.748
+TNS   : -276.939
 
 Type  : Slow 1200mV 85C Model Setup 'ADC128S022_DRIVER:ADC1|ADC_SCLK'
-Slack : -1.321
-TNS   : -16.654
+Slack : -1.336
+TNS   : -26.090
 
 Type  : Slow 1200mV 85C Model Hold 'clk_in'
-Slack : 0.435
+Slack : 0.433
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'ADC128S022_DRIVER:ADC1|ADC_SCLK'
@@ -19,11 +19,11 @@ Slack : 0.467
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'ADC128S022_DRIVER:ADC1|ADC_SCLK'
-Slack : -0.432
-TNS   : -3.456
+Slack : -0.765
+TNS   : -6.120
 
 Type  : Slow 1200mV 85C Model Removal 'ADC128S022_DRIVER:ADC1|ADC_SCLK'
-Slack : 0.753
+Slack : 1.102
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_in'
@@ -35,15 +35,15 @@ Slack : -1.487
 TNS   : -35.688
 
 Type  : Slow 1200mV 0C Model Setup 'clk_in'
-Slack : -3.563
-TNS   : -232.616
+Slack : -3.449
+TNS   : -248.463
 
 Type  : Slow 1200mV 0C Model Setup 'ADC128S022_DRIVER:ADC1|ADC_SCLK'
-Slack : -1.074
-TNS   : -15.719
+Slack : -1.160
+TNS   : -24.267
 
 Type  : Slow 1200mV 0C Model Hold 'clk_in'
-Slack : 0.384
+Slack : 0.383
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ADC128S022_DRIVER:ADC1|ADC_SCLK'
@@ -51,11 +51,11 @@ Slack : 0.420
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'ADC128S022_DRIVER:ADC1|ADC_SCLK'
-Slack : -0.398
-TNS   : -3.184
+Slack : -0.681
+TNS   : -5.448
 
 Type  : Slow 1200mV 0C Model Removal 'ADC128S022_DRIVER:ADC1|ADC_SCLK'
-Slack : 0.812
+Slack : 1.108
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_in'
@@ -67,32 +67,32 @@ Slack : -1.487
 TNS   : -35.688
 
 Type  : Fast 1200mV 0C Model Setup 'clk_in'
-Slack : -1.160
-TNS   : -54.915
+Slack : -1.032
+TNS   : -58.944
 
 Type  : Fast 1200mV 0C Model Setup 'ADC128S022_DRIVER:ADC1|ADC_SCLK'
-Slack : -0.012
-TNS   : -0.012
+Slack : -0.133
+TNS   : -2.118
 
 Type  : Fast 1200mV 0C Model Hold 'clk_in'
-Slack : 0.179
+Slack : 0.178
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ADC128S022_DRIVER:ADC1|ADC_SCLK'
-Slack : 0.192
+Slack : 0.191
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'ADC128S022_DRIVER:ADC1|ADC_SCLK'
-Slack : 0.181
+Slack : 0.037
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'ADC128S022_DRIVER:ADC1|ADC_SCLK'
-Slack : 0.446
+Slack : 0.597
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_in'
 Slack : -3.000
-TNS   : -124.597
+TNS   : -124.589
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ADC128S022_DRIVER:ADC1|ADC_SCLK'
 Slack : -1.000

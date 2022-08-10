@@ -1,5 +1,6 @@
 |main
 clk_in => clk_in.IN2
+start_button => led.DATAIN
 start_button => always1.IN1
 T_frame_switch => Hz[7].DATAIN
 T_frame_switch => Hz[12].DATAIN
@@ -10,6 +11,7 @@ T_frame_switch => Hz[20].DATAIN
 T_frame_switch => Hz[21].DATAIN
 T_frame_switch => Hz[23].DATAIN
 T_frame_switch => Hz[25].DATAIN
+T_frame_switch => led_sw.DATAIN
 T_frame_switch => Hz[6].DATAIN
 T_frame_switch => Hz[8].DATAIN
 T_frame_switch => Hz[9].DATAIN
@@ -17,18 +19,18 @@ T_frame_switch => Hz[11].DATAIN
 T_frame_switch => Hz[18].DATAIN
 ADC_SDAT => ADC_SDAT.IN1
 reset => reset.IN2
-Hold_IV <= Hold_IV~reg0.DB_MAX_OUTPUT_PORT_TYPE
-Reset_IV <= Reset_IV~reg0.DB_MAX_OUTPUT_PORT_TYPE
-D_out <= D_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
-ADC_start_convert <= ADC_start_convert.DB_MAX_OUTPUT_PORT_TYPE
-ADC_SCLK <= ADC128S022_DRIVER:ADC1.ADC_SCLK
-ADC_CS_N <= ADC128S022_DRIVER:ADC1.ADC_CS_N
-ADC_SADDR <= ADC128S022_DRIVER:ADC1.ADC_SADDR
-Tx_out <= UART_Tx:TX1.Tx_out
+Hold_IV << Hold_IV~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Reset_IV << Reset_IV~reg0.DB_MAX_OUTPUT_PORT_TYPE
+D_out << D_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ADC_SCLK << ADC128S022_DRIVER:ADC1.ADC_SCLK
+ADC_CS_N << ADC128S022_DRIVER:ADC1.ADC_CS_N
+ADC_SADDR << ADC128S022_DRIVER:ADC1.ADC_SADDR
+Tx_out << UART_Tx:TX1.Tx_out
+led << start_button.DB_MAX_OUTPUT_PORT_TYPE
+led_sw << T_frame_switch.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |main|ADC128S022_DRIVER:ADC1
-clk_in => ADC_SCLK~reg0.CLK
 clk_in => cnt[0].CLK
 clk_in => cnt[1].CLK
 clk_in => cnt[2].CLK
@@ -37,9 +39,10 @@ clk_in => cnt[4].CLK
 clk_in => cnt[5].CLK
 clk_in => cnt[6].CLK
 clk_in => cnt[7].CLK
+clk_in => process_flg.CLK
 clk_in => ADC_SADDR~reg0.CLK
 clk_in => ADC_CS_N~reg0.CLK
-clk_in => process_flg.CLK
+clk_in => ADC_SCLK~reg0.CLK
 clk_in => state~1.DATAIN
 start_convert => Selector0.IN3
 start_convert => Selector1.IN1

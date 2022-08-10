@@ -40,7 +40,7 @@ reg start_button;
 wire ADC_CS_N;
 wire ADC_SADDR;
 wire ADC_SCLK;
-wire ADC_start_convert;
+//wire ADC_start_convert;
 wire D_out;
 wire Hold_IV;
 wire Reset_IV;
@@ -75,10 +75,10 @@ ADC_SDAT <= 1'b0;   /// data for test
 #10000 start_button <= 1'b1;                                            
 #4000000 start_button <= 1'b1;
 
-#10000 start_button <= 1'b0;
-#10000 start_button <= 1'b1; 
+//#10000 start_button <= 1'b0;
+//#10000 start_button <= 1'b1; 
 
-#10000 start_button <= 1'b0;
+//#10000 start_button <= 1'b0;
 
 
 

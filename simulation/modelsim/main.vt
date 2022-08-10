@@ -40,7 +40,7 @@ reg start_button;
 wire ADC_CS_N;
 wire ADC_SADDR;
 wire ADC_SCLK;
-wire ADC_start_convert;
+//wire ADC_start_convert;
 wire D_out;
 wire Hold_IV;
 wire Reset_IV;
@@ -53,7 +53,7 @@ main i1 (
 	.ADC_SADDR(ADC_SADDR),
 	.ADC_SCLK(ADC_SCLK),
 	.ADC_SDAT(ADC_SDAT),
-	.ADC_start_convert(ADC_start_convert),
+	//.ADC_start_convert(ADC_start_convert),
 	.D_out(D_out),
 	.Hold_IV(Hold_IV),
 	.Reset_IV(Reset_IV),

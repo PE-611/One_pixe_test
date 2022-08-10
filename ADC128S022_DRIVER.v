@@ -133,6 +133,18 @@ always @*
 		
 		
 always @(posedge clk_in) begin
+
+	if (state == IDLE) begin
+		ADC_SCLK <= 1'b1;
+		ADC_CS_N <= 1'b1;
+		ADC_SADDR <= 1'b0; 
+	
+		
+		process_flg <= 1'b0;
+	
+		cnt <= 1'b0;
+			
+	end
 	
 	if (state == START) begin
 		process_flg <= 1'b1;
@@ -175,6 +187,7 @@ always @(posedge ADC_SCLK or negedge process_flg) begin
 	
 	if (!process_flg) begin														
 		cnt_quantity_clk <= 1'b0;
+		
 	end
 	
 	else begin

@@ -9,17 +9,20 @@
 
 module main (input clk_in, start_button, T_frame_switch, ADC_SDAT, reset,
 	     
-				 output reg Hold_IV, Reset_IV, D_out, ADC_start_convert, 
+				 output reg Hold_IV, Reset_IV, D_out, 
 				 
 				 output ADC_SCLK, ADC_CS_N, ADC_SADDR,
 				 
-				 output Tx_out 
+				 output Tx_out, 
+				 
+				 led, led_sw
 				 );
 				 
-
+assign led = start_button;
+assign led_sw = T_frame_switch;
 //////////////////////////// TOP MODULE REG/WIRE/PARAMETERS ///////////////////////////////////////////////////////////
 
-parameter divider = 2000;
+parameter divider = 8000;
 parameter t_frame_1sec = 50000000;
 parameter t_frame_0_1sec = 5000000; // !!!!не забыть поставить число 50 000 00!!!!!!!!!
 
@@ -50,12 +53,12 @@ reg [32:0] Hz;
 
 
 //////////////////////////// ADC128S022_DRIVER MODULE REG/WIRE/PARAMETERS //////////////////////////////////////////////
-
+reg ADC_start_convert;
 wire [15:0] data_out;
 wire [7:0] data_1_half;
 wire [7:0] data_2_half;
-assign data_1_half = data_out[7:0];
-assign data_2_half = data_out[15:8];
+assign data_2_half = data_out[7:0];
+assign data_1_half = data_out[15:8];
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

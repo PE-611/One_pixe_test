@@ -10,96 +10,100 @@ z2
 cModel Technology
 Z0 dD:/Job/project_quartus/One_pixe_test/simulation/modelsim
 vADC128S022_DRIVER
-Z1 !s110 1660079138
+Z1 !s110 1660147667
 !i10b 1
-!s100 @?cgcG6VN6a=3LL6:W?lL3
+!s100 VILh9flEQ]EXMW_5M1<cS0
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I6m3gaCR9V6@[b1Ed;l2992
+I^l00;?0V<2HcDfdd=CT422
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1660071386
-8D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
-FD:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v
-!i122 37
+8D:/Job/project_quartus/One_pixe_test/adc128s022_driver.v
+FD:/Job/project_quartus/One_pixe_test/adc128s022_driver.v
+!i122 1
 L0 10 194
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1660079138.000000
-!s107 D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v|
-!s90 -reportprogress|300|-work|work|D:/Job/project_quartus/One_pixe_test/ADC128S022_DRIVER.v|
+Z5 !s108 1660147667.000000
+!s107 D:/Job/project_quartus/One_pixe_test/adc128s022_driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Job/project_quartus/One_pixe_test|D:/Job/project_quartus/One_pixe_test/adc128s022_driver.v|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+D:/Job/project_quartus/One_pixe_test
+Z8 tCvgOpt 0
 n@a@d@c128@s022_@d@r@i@v@e@r
 vmain
 R1
 !i10b 1
-!s100 ^h5Vo]:`e5FMM^7d7U]=c3
+!s100 Ho6Z8PiU9RO^VlJRTUjgi1
 R2
-Ibh7l20Ea;e`9l]VGjSbGi1
+IMR54fT5X_cQzMMl7U^bhO2
 R3
 R0
-w1660079086
+w1660147527
 8D:/Job/project_quartus/One_pixe_test/main.v
 FD:/Job/project_quartus/One_pixe_test/main.v
-!i122 38
+!i122 0
 L0 10 337
 R4
 r1
 !s85 0
 31
-R5
+!s108 1660147666.000000
 !s107 D:/Job/project_quartus/One_pixe_test/main.v|
-!s90 -reportprogress|300|-work|work|D:/Job/project_quartus/One_pixe_test/main.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Job/project_quartus/One_pixe_test|D:/Job/project_quartus/One_pixe_test/main.v|
 !i113 1
 R6
 R7
+R8
 vmain_vlg_tst
-!s110 1660079141
+R1
 !i10b 1
-!s100 =`Z@9Z[=G>SVFHC=058751
+!s100 RU6P1NjIo>Go5O`]T@?cK1
 R2
-ID323=40eQYSzX`V0ERndh0
+Imc9gLhbUoSZKAY30]I^kc2
 R3
 R0
-w1660079135
+w1660147641
 8D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
 FD:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt
-!i122 40
+!i122 3
 L0 29 66
 R4
 r1
 !s85 0
 31
-!s108 1660079141.000000
+R5
 !s107 D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt|
-!s90 -reportprogress|300|-work|work|D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Job/project_quartus/One_pixe_test/simulation/modelsim|D:/Job/project_quartus/One_pixe_test/simulation/modelsim/main.vt|
 !i113 1
 R6
-R7
+!s92 -vlog01compat -work work +incdir+D:/Job/project_quartus/One_pixe_test/simulation/modelsim
+R8
 vUART_Tx
 R1
 !i10b 1
-!s100 U^9hoPY:Q1jO1e4Fl39:c0
+!s100 eDH8NUeDHkkNzC23_LHL`0
 R2
-IDFX7lH_2_YB_6mBPOS^1i3
+IoPccDk9o0N=_mcni[Q8nO2
 R3
 R0
 w1660079044
-8D:/Job/project_quartus/One_pixe_test/UART_Tx.v
-FD:/Job/project_quartus/One_pixe_test/UART_Tx.v
-!i122 39
+8D:/Job/project_quartus/One_pixe_test/uart_tx.v
+FD:/Job/project_quartus/One_pixe_test/uart_tx.v
+!i122 2
 L0 9 161
 R4
 r1
 !s85 0
 31
 R5
-!s107 D:/Job/project_quartus/One_pixe_test/UART_Tx.v|
-!s90 -reportprogress|300|-work|work|D:/Job/project_quartus/One_pixe_test/UART_Tx.v|
+!s107 D:/Job/project_quartus/One_pixe_test/uart_tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/Job/project_quartus/One_pixe_test|D:/Job/project_quartus/One_pixe_test/uart_tx.v|
 !i113 1
 R6
 R7
+R8
 n@u@a@r@t_@tx
